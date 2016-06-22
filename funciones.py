@@ -44,7 +44,9 @@ def fib3(n):
 		a ,b = b , a+b
 		c+=1
 
-fib3(400)
+
+
+fib3(300)
 
 
 
