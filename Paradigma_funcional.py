@@ -11,7 +11,7 @@ def negativo(n):
 # Si es par
 def es_par(n):
 	return n%2==0
-#Si no es par
+#Si es primo
 def es_primo(num):
 	if num<=1:
 		return False
