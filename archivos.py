@@ -4,7 +4,7 @@ f3 = open("copia.txt", "w")
 f3.write("Esto es una vil y vulgar copia" + "\n")
 while True:
  	linea = f.readline()
-	if not linea: break
+	if not linea: break 
 	f3.write(linea+"\n")
 	print linea
 

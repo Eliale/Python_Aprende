@@ -15,37 +15,35 @@ def es_par(n):
 def es_primo(num):
 	if num<=1:
 		return False
-	es_primo = True
-	for x in range(2,num):
-		if(num%x==0):
-			es_primo=False
-	return es_primo
+		es_primo = True
+		for x in range(2,num):
+			if(num%x==0):
+				es_primo=False
+				return es_primo
 
 
 
 # Usar map en la lista
 numeros = range(0,101)
 
-l=map(cuadrado, numeros)
+l=list(map(cuadrado, numeros))
+print (l)
 
-print l
+l2=list(map(negativo, numeros))
+print (l2)
 
-l2=map(negativo, numeros)
+l3=list(map(es_par, numeros))
 
-print l2
-
-l3=map(es_par, numeros)
-
-print l3
+print (l3)
 
 #Uso de filtros
 # un filter es como un if pero mas pro xD
 
-l4=filter(es_par, numeros)
-print l4
+l4=list(filter(es_par, numeros))
+print (l4)
 
-l5=filter(es_primo, numeros)
-print "Primo",l5
+l5=list(filter(es_primo, numeros))
+print ("Primo",l5)
 
 #Uso de Reduce
 
